@@ -1,0 +1,70 @@
+.layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: url(/assets/img/lilith-dark-bg.jpg), lightgray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  height: 109px;
+  padding: 10px 0px 10px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  background: rgba(255, 255, 255, 0);
+}
+
+main {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+main:hover {
+  animation-timing-function: ease-in;
+  animation-duration: 600ms;
+}
+
+footer {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.call-to-buy__btn {
+  width: 100px;
+  height: 100px;
+  background: url(/assets/img/call-to-buy-btn.png),
+    lightgray 50% / cover no-repeat;
+}
+
+.logo {
+  width: 243px;
+  height: 89px;
+  background: url(/assets/img/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.characters__btn {
+  width: 100px;
+  height: 100px;
+  background: url(/assets/img/characters-btn.png),
+    lightgray 50% / cover no-repeat;
+}
