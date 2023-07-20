@@ -5,10 +5,12 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  background: url(/assets/img/lilith-dark-bg.jpg), lightgray;
+  background: url(/assets/img/lilith-dark-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: ease-in-out 600ms;
+  transition-delay: 150ms;
 }
 
 header {
@@ -33,9 +35,17 @@ main {
   align-self: stretch;
 }
 
-main:hover {
-  animation-timing-function: ease-in;
-  animation-duration: 600ms;
+.layout:has(main:hover) {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: url(/assets/img/lilith-light-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 footer {
